@@ -1,8 +1,15 @@
-# Byte-compiled / optimized / DLL files
+# Ignore Python cache files
 __pycache__/
+*.pyc
+*.pyo
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+
+# Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
-*.pyc
 **/__pycache__/
 
 # C extensions
