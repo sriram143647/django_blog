@@ -125,3 +125,21 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # myblog_project/custom_settings.py
 AUTH_USER_MODEL = 'blog_users.BlogUser'
+
+# AUTHENTICATION_BACKENDS = [
+#     'django.contrib.auth.backends.ModelBackend',
+#     'allauth.account.auth_backends.AuthenticationBackend',
+# ]
+
+CSRF_COOKIE_SECURE = True
+
+LOGIN_REDIRECT_URL = '/users/profile/'
+
+LOGIN_URL = 'login'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'your_smtp_server'
+EMAIL_PORT = 587  # Use thr your SMTP server
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'your_username'
+EMAIL_HOST_PASSWORD = 'your_password'
